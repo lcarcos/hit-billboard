@@ -1,4 +1,4 @@
-#PROJETO DE DATA MINING - Prevendo um Hit da Billboard
+# Prevendo um Hit da Billboard
 
 
 *A Billboard Hot 100 é o gráfico padrão da indústria da música nos Estados Unidos, publicado
