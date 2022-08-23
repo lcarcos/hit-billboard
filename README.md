@@ -5,30 +5,18 @@
 semanalmente pela revista Billboard
 
 1. Introdução
-Neste projeto tentei resolver um problema de Hit Song Science, tema em debate
-e pesquisa entre a comunidade de Music Information Retrieval (MIR), que visa
-prever quais músicas estarão no “topo das paradas”. Estudos demonstram que a
-utilização de técnicas de Machine Learning podem capturar informações de
-sinais de áudio e letras que poderiam explicar sua popularidade.
-A previsão de sucesso é especialmente útil para músicos, gravadoras e
-distribuidores de música, que podem optar por investir recursos limitados
-(campanhas publicitárias, equipamento de estúdio, etc.) em faixas que
-provavelmente se tornarão populares.
+
+Neste projeto tentei resolver um problema de Hit Song Science, tema em debate e pesquisa entre a comunidade de Music Information Retrieval (MIR), que visa
+prever quais músicas estarão no “topo das paradas”. Estudos demonstram que a utilização de técnicas de Machine Learning podem capturar informações de sinais de áudio e letras que poderiam explicar sua popularidade. A previsão de sucesso é especialmente útil para músicos, gravadoras e distribuidores de música, que podem optar por investir recursos limitados (campanhas publicitárias, equipamento de estúdio, etc.) em faixas que provavelmente se tornarão populares.
+
 2. Análise Exploratória
+
 2.1 Base de dados
-Foi utilizada uma base de dados do Kaggle “The Spotify Hit Predictor Dataset”. A
-base de dados apresenta características das músicas obtidas através da API do
-Spotify. Outra base de dados foi obtida através do API da Billboard contendo os
-TOP 100 Hits do mesmo período. Por fim, os dados foram relacionados e as
-faixas rotuladas como '1' ou '0' ('Hit' ou 'Não Hit). A base de dados resultante
-pode ser utilizada para criar um modelo de classificação que prevê se uma
-música será um 'Hit' ou não.
-Para o projeto trabalhei apenas com músicas da última década totalizando 6398
-registros, 19 colunas, sendo 18 atributos mais a coluna da classe (target)
-Foi verificado que a base de dados está balanceada contendo 3199 Hits e 3199
-Não Hits.
+
+Foi utilizada uma base de dados do Kaggle “The Spotify Hit Predictor Dataset”. A base de dados apresenta características das músicas obtidas através da API do Spotify. Outra base de dados foi obtida através do API da Billboard contendo os TOP 100 Hits do mesmo período. Por fim, os dados foram relacionados e as faixas rotuladas como '1' ou '0' ('Hit' ou 'Não Hit). A base de dados resultante pode ser utilizada para criar um modelo de classificação que prevê se uma música será um 'Hit' ou não. Para o projeto trabalhei apenas com músicas da última década totalizando 6398 registros, 19 colunas, sendo 18 atributos mais a coluna da classe (target) Foi verificado que a base de dados está balanceada contendo 3199 Hits e 3199 Não Hits.
+
 2.2 Atributos
-]
+
 Os 18 atributos de cada registro são:
 ● track: O nome da faixa musical
 ● artist: Nome do artista.
