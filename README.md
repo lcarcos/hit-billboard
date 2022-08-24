@@ -29,21 +29,26 @@ Os 18 atributos de cada registro são:
 combinação de elementos musicais, incluindo andamento, estabilidade do ritmo,
 intensidade da batida e regularidade geral. Um valor de 0,0 é menos dançável e 1,0 é
 mais dançante.
+
 ● energy: medida de 0,0 a 1,0 e representa uma medida perceptual de intensidade e
 atividade. Normalmente, as faixas energéticas parecem rápidas, altas e barulhentas.
 Por exemplo, death metal tem alta energia, enquanto um prelúdio de Bach tem
 pontuação baixa na escala. As características perceptivas que contribuem para este
 atributo incluem faixa dinâmica, intensidade percebida, timbre, taxa de início e entropia
 geral.
+
 ● key: O Tom da faixa no geral. Números inteiros mapeiam os tons utilizando notação
 padrão. Ex\;. 0 = C, 1 = C#/Db, 2 = D, e e assim por diante. Se o tom não foi
 identificado, o valor é -1.
+
 ● loudness: O volume geral de uma faixa em decibéis (dB). Os valores são calculados
 em toda a faixa e são úteis para comparar a sonoridade relativa das faixas. Loudness é
 a qualidade de um som que é o principal correlato psicológico da força física
 (amplitude). Os valores típicos variam entre -60 e 0 db.
+
 ● mode: Modo indica a modalidade (maior ou menor) de uma faixa, o tipo de escala da
 qual seu conteúdo melódico é derivado. Maior é representado por 1 e menor é 0.
+
 ● speechiness: detecta a presença de palavras faladas em uma faixa. Quanto mais
 exclusivamente falada for a gravação (por exemplo, talk show, audiolivro, poesia), mais
 próximo de 1,0 será o valor do atributo. Valores acima de 0,66 descrevem faixas que
@@ -51,35 +56,46 @@ provavelmente são compostas inteiramente de palavras faladas. Valores entre 0,3
 0,66 descrevem faixas que podem conter música e fala, em seções ou em camadas,
 incluindo casos como música rap. Valores abaixo de 0,33 provavelmente representam
 faixas com mais ênfase na música e menos na fala.
+
 ● acousticness: Uma medida de confiança de 0,0 a 1,0 para saber se a faixa é acústica.
 1.0 representa alta confiança de que a faixa é acústica.
+
 ● instrumentalness: Prevê se uma faixa não contém vocais. Os sons “Ooh” e “aah” são
 tratados como instrumentais neste contexto. Faixas de rap ou palavra falada são
 claramente “vocais”. Quanto mais próximo o valor da instrumentalidade estiver de 1,0,
 maior será a probabilidade de a faixa não conter conteúdo vocal. Valores acima de 0,5
 destinam-se a representar faixas instrumentais, mas a confiança é maior à medida que
 o valor se aproxima de 1,0.
+
 ● liveness: Detecta a presença de um público na gravação. Valores de vivacidade mais
 altos representam um aumento na probabilidade de a trilha ter sido executada ao vivo.
 Um valor acima de 0,8 fornece uma forte probabilidade de que a faixa esteja ao vivo.
+
 ● valence: A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a
 track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric),
 while tracks with low valence sound more negative (e.g. sad, depressed, angry).
+
 ● tempo: O tempo estimado geral de uma faixa em batidas por minuto (BPM). Na
 terminologia musical, o tempo é a velocidade ou ritmo de uma determinada peça e
 deriva diretamente da duração média do tempo.
+
 ● duration_ms: A duração da faixa em milissegundos.
+
 ● time_signature: Uma estimativa geral do compasso de uma faixa. O compasso
 (medidor) é uma convenção notacional para especificar quantas batidas existem em
 cada barra.
+
 ● chorus_hit: Estimativa do trecho em que o refrão aparece.
-● sections: O número de seções que a faixa específica possui.a
+
+● sections: O número de seções que a faixa específica possui.
+
 ● target: A variável de destino da faixa. Pode ser '0' ou '1'. '1' implica que essa música
 apareceu na lista semanal (publicada pela Billboards) das faixas do Hot-100 naquela
 década pelo menos uma vez e, portanto, é um 'hit'. '0' implica que a faixa é um 'flop'.
 
 
 Matriz de Correlação
+
 Foi verificada a ausência de missing values e foram retiradas as categorias
 desnecessárias (track, artist, uri). Depois de processar os atributos a base de
 dados foi dividida para treinamento e teste, tendo a proporção de 20% para
@@ -90,14 +106,12 @@ treinamento.
 Para previsão foram utilizados 4 tipos de modelo de classificação:
 
 ● Logistic Regression (LR)
+
 ● Random Forest (RF)
+
 ● AdaBoost
+
 ● K-nearest neighbors (KNN)
-Foram obtidos os seguintes resultados:
-Logistic Regression (LR)
-Random Forest (RF)
-AdaBoost
-KNN
 
 4. Resultados
 
