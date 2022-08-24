@@ -18,9 +18,13 @@ Foi utilizada uma base de dados do Kaggle “The Spotify Hit Predictor Dataset�
 2.2 Atributos
 
 Os 18 atributos de cada registro são:
+
 ● track: O nome da faixa musical
+
 ● artist: Nome do artista.
+
 ● url: identifica a origem da faixa
+
 ● danceability: descreve como uma faixa é adequada para dançar com base em uma
 combinação de elementos musicais, incluindo andamento, estabilidade do ritmo,
 intensidade da batida e regularidade geral. Um valor de 0,0 é menos dançável e 1,0 é
@@ -80,8 +84,11 @@ Foi verificada a ausência de missing values e foram retiradas as categorias
 desnecessárias (track, artist, uri). Depois de processar os atributos a base de
 dados foi dividida para treinamento e teste, tendo a proporção de 20% para
 treinamento.
+
 3. Modelos e Algoritmos
+
 Para previsão foram utilizados 4 tipos de modelo de classificação:
+
 ● Logistic Regression (LR)
 ● Random Forest (RF)
 ● AdaBoost
@@ -91,14 +98,15 @@ Logistic Regression (LR)
 Random Forest (RF)
 AdaBoost
 KNN
+
 4. Resultados
+
 O modelo de classificação escolhido foi Random Forest apresentando precisão
 de 99% no treinamento e 91% no teste. O resultado final indicou 85,7% de
 acurácia.
+
 5. Conclusão
+
 O projeto final da disciplina data mining foi uma oportunidade de iniciar estudos
 preliminares para um provável projeto final tendo como foco a área de Music
-Information Retrieval. Optei por realizar em Python como forma de me
-aprofundar na linguagem e certamente é um código que seguirei trabalhando e
-aperfeiçoando. Agradeço pelas excelentes aulas que estão possibilitando
-compreender melhor os debates sobre MIR, meu foco de pesquisa.
+Information Retrieval.
